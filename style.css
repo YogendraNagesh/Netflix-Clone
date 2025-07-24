@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('images/header-img.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.logo {
+  width: 180px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-buttons select,
+.btn-signin {
+  padding: 6px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-buttons select {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.language-select option {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.btn-signin {
+  background-color: red;
+  color: #ffffff;
+  border: none;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 180px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content p,
+.sub-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-form input {
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.btn-get-started {
+  padding: 15px 25px;
+  font-size: 1rem;
+  background-color: red;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+/* TRENDING SECTION */
+.trending {
+  padding: 40px 60px;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Carousel */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 40s linear infinite;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 140px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #222;
+}
+
+.number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3px 6px;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  color: white;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+/* REASONS TO JOIN */
+.reasons {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.reasons h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.reason-card {
+  background: linear-gradient(145deg, #2c315d, #000000);
+  padding: 30px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+}
+
+.reason-card img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.reason-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.reason-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* FAQ SECTION */
+.faq {
+  padding: 60px 40px;
+  text-align: left;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.faq-container details {
+  background-color: #222;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq-container summary {
+  font-size: 1.1rem;
+  font-weight: 500;
+  list-style: none;
+  padding-right: 30px;
+  position: relative;
+}
+
+.faq-container summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.faq-container details[open] summary::after {
+  content: '−';
+  transform: rotate(180deg);
+}
+
+.faq-container p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* CTA EMAIL SECTION */
+.cta {
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 8px solid #222;
+}
+
+.cta h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.cta-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cta-form input[type="email"] {
+  padding: 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 700px;
+  outline: none;
+}
+
+.cta-form button {
+  background-color: #e50914;
+  color: white;
+  padding: 16px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-form button:hover {
+  background-color: #f40612;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #000;
+  color: #757575;
+  padding: 60px 20px;
+  font-size: 0.875rem;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-top-text {
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.footer-top-text a {
+  color: #757575;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-bottom select {
+  background-color: #000;
+  color: #757575;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.footer-brand {
+  margin: 0;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+      text-decoration-line: underline;
+
+}
+
+
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .email-form input {
+    width: 100%;
+  }
+
+  .carousel {
+    animation-duration: 60s;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+
