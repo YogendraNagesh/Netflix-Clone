@@ -4,3 +4,4 @@ A responsive front-end clone of the Netflix India homepage built using only HTML
 ![image alt](https://github.com/YogendraNagesh/Netflix-Clone/blob/8d094e5b801bb72af88033e914d852d2366d3160/img-ss/ss1.png)
 ![image alt](https://github.com/YogendraNagesh/Netflix-Clone/blob/9a596c80772b9ad51d86e4b39f8a44fdc7322b57/img-ss/ss2.png)
 ![image alt](https://github.com/YogendraNagesh/Netflix-Clone/blob/7abf06d4d6f96dc58e85acd978d1586538d41c49/img-ss/ss3.png)
+![image alt](https://github.com/YogendraNagesh/Netflix-Clone/blob/0b4613886ca5f7f3f3da983011a7a55f21d455d3/img-ss/ss4.png)
